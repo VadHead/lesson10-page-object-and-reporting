@@ -1,21 +1,28 @@
 package net.absoft.pages;
 
 import net.absoft.data.Account;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BaseComponent {
+  @FindBy(css = "input[data-test='username']")
+  public WebElement usernameInput;
+
+  @FindBy(css = "input[data-test='password']")
+  public WebElement passwordInput;
+
+  @FindBy(css = "input[data-test='login-button']")
+  public WebElement loginButton;
 
   public LoginPage(WebDriver driver) {
     super(driver);
   }
 
   public InventoryPage login(Account account) {
-    driver.findElement(By.cssSelector("input[data-test='username']"))
-        .sendKeys(account.getLogin());
-    driver.findElement(By.cssSelector("input[data-test='password']"))
-        .sendKeys(account.getPassword());
-    driver.findElement(By.cssSelector("input[data-test='login-button']")).click();
+    usernameInput.sendKeys(account.getLogin());
+    passwordInput.sendKeys(account.getPassword());
+    loginButton.click();
     return new InventoryPage(driver);
   }
 }
