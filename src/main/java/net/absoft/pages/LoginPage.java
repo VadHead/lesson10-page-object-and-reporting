@@ -1,7 +1,5 @@
 package net.absoft.pages;
 
-import static org.testng.Assert.assertTrue;
-
 import net.absoft.data.Account;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

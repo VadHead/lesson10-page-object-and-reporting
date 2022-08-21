@@ -2,10 +2,8 @@ package net.absoft.components;
 
 import static org.testng.Assert.assertTrue;
 
-import net.absoft.data.Account;
 import net.absoft.pages.BaseComponent;
 import net.absoft.pages.CartPage;
-import net.absoft.pages.InventoryPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
