@@ -1,5 +1,6 @@
 package net.absoft.pages;
 
+import io.qameta.allure.Step;
 import net.absoft.data.Account;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,6 +20,7 @@ public class LoginPage extends BaseComponent {
     super(driver);
   }
 
+  @Step("Perform login as {account.login} with password {account.password}")
   public InventoryPage login(Account account) {
     usernameInput.sendKeys(account.getLogin());
     passwordInput.sendKeys(account.getPassword());

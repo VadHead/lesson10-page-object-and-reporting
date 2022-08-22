@@ -1,5 +1,6 @@
 package net.absoft;
 
+import io.qameta.allure.Description;
 import net.absoft.data.Account;
 import net.absoft.pages.InventoryPage;
 import net.absoft.pages.LoginPage;
@@ -19,6 +20,7 @@ public class CartTest extends BaseTest {
     inventoryPage = new InventoryPage(driver);
   }
 
+  @Description("Test adding item to cart")
   @Test
   public void testAddingItemToCart() {
     inventoryPage

@@ -1,5 +1,6 @@
 package net.absoft.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,6 +13,7 @@ public class InventoryPage extends BaseStorePage {
     super(driver);
   }
 
+  @Step("Adding item {itemName} to cart")
   public InventoryPage addItemToCart(String itemName) {
     WebElement item = driver.findElement(By.xpath(String.format(itemXPath, itemName)));
     WebElement addToCartButton = item.findElement(
