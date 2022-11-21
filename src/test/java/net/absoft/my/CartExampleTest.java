@@ -7,8 +7,6 @@ import net.absoft.myPages.LoginPageMy;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import static org.testng.Assert.assertTrue;
-
 public class CartExampleTest extends BaseExampleTest {
 	
 	private final String ITEM = "Sauce Labs Backpack";

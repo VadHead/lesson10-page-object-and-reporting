@@ -4,7 +4,7 @@ import net.absoft.data.Account;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class LoginPageMy extends BasePageMy{
+public class LoginPageMy extends BasePageMy {
 	
 	public LoginPageMy(WebDriver driver) {
 		super(driver);
