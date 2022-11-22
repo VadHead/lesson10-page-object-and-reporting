@@ -19,7 +19,7 @@ public class CartTest extends BaseTest {
 		inventoryPage = new InventoryPage(driver);
 	}
 	
-	@Test
+	@Test(description = "Test adding the item to the cart")
 	public void testAddingItemToCart() {
 		inventoryPage
 				.addItemToCart(ITEM)
