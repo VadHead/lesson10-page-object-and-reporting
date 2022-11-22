@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class InventoryPage extends BaseStorePage {
 	
-	private final String itemXPath = "//div[@class='inventory_item'][.//div[@class='inventory_item_name' and text()=' %s ']]";
+	private final String itemXPath = "//div[@class='inventory_item'][.//div[@class='inventory_item_name' and text()='%s']]";
 	
 	public InventoryPage(WebDriver driver) {
 		super(driver);

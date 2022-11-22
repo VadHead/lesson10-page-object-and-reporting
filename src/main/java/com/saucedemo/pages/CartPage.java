@@ -7,7 +7,7 @@ import static org.testng.Assert.assertTrue;
 
 public class CartPage extends BaseStorePage {
 	
-	private final String itemXPath = "//div[@class='cart_item'][.//div[@class='cart_item_name' and text()=' %s ']]";
+	private final String itemXPath = "//div[@class='cart_item'][.//div[@class='inventory_item_name' and text()='%s']]";
 	
 	public CartPage(WebDriver driver) {
 		super(driver);
