@@ -1,7 +1,7 @@
 package com.saucedemo;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import net.absoft.reporting.AttachmentUtils;
+import com.saucedemo.reporting.AttachmentUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
@@ -32,5 +32,4 @@ public abstract class BaseTest {
 		}
 		driver.quit();
 	}
-	
 }
