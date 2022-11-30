@@ -2,8 +2,9 @@ package com.saucedemo.data;
 
 public enum Account {
 
-  STANDARD_USER("standard_user", "secret_sauce");
-  // Other accounts might be placed here
+  STANDARD_USER("standard_user", "secret_sauce"),
+  STANDARD_USER_WRONG_PASSWORD("standard_user", "wrong_password"),
+  LOCKED_OUT_USER("locked_out_user", "secret_sauce");
 
   private String login;
   private String password;
